@@ -1,0 +1,179 @@
+/* ===== STYLE UTAMA HALAMAN UTAMA ===== */
+
+
+body {
+  background: #70db5d; /* warna coklat sesuai tema laki-laki NIM ganjil */
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 3px;
+
+}
+
+h4{
+    text-align: center;
+}
+
+/* .header{
+  width: fit-content;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;   
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.5); 
+  padding: 10px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px); 
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25); 
+} */
+
+
+p {
+  cursor: pointer;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 10px;
+  transition: 0.2s;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.judul {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 10px;
+  transition: 0.2s;
+  margin-left: 10px;
+  
+}
+
+.judul:hover {
+  background: rgba(0,0,0,0.2);
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.ref{
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.paragraf {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.6); /* kotak putih transparan */
+  padding: 10px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px); /* efek blur */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25); /* sedikit bayangan */
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+/* Hover untuk tombol */
+button:hover {
+  background: rgba(0,0,0,0.2) !important;
+  transform: scale(1.03);
+  transition: 0.2s;
+}
+
+.btn-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Agar tombol tidak terlalu melebar */
+.btn-center button {
+    display: inline-block;
+    margin: 10px;
+    width: 200px; /* opsi: kamu bisa ubah */
+}
+
+
+
+#modeBtn {
+  background: #6def80;
+  color: white;
+}
+
+#gambarBtn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  
+}
+
+/* ===== MODE BERANTAKAN ===== */
+.berantakan {
+background: #ff00ff !important;
+color: yellow !important;
+font-size: 20px;
+}
+.berantakan .judul {
+background: #00ffff !important;
+color: red !important;
+}
+.berantakan button {
+background: #0000ff !important;
+color: lime !important;
+}
+
+/* ===== STYLE UNTUK HALAMAN GAMBAR ===== */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #f5deb3;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
