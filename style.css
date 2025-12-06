@@ -119,7 +119,7 @@ button:hover {
 
 
 #modeBtn {
-  background: #6def80;
+  background: rgba(255, 255, 255, 0.2);
   color: white;
 }
 
